@@ -76,6 +76,7 @@
         "format": "{icon}",
         "icon-size": 24,
         "all-outputs": true,
+        "sort-by-app-id": true,
         "tooltip-format": "{title}",
         "on-click": "activate",
         "on-click-middle": "close",
@@ -114,7 +115,7 @@
     "network": {
         "format": " ",
         "tooltip-format": "{ipaddr}/{cidr}\n* {signalStrength} %\n↑ {bandwidthUpBytes}\n↓ {bandwidthDownBytes}",
-        "on-click": "nm-connection-editor",
+        "on-click": "kitty sudo iftop",
         "on-click-right": "kitty nmtui"
     },
 
