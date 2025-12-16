@@ -26,7 +26,8 @@
         "memory",
         "temperature",
         "network",
-        "custom/lock"
+        "custom/lock",
+        "custom/off"
     ],
 
     "custom/wallpaper": {
@@ -122,6 +123,12 @@
     "custom/lock": {
         "format": "",
         "on-click": "swaylock",
+        "tooltip": false
+    },
+
+    "custom/off": {
+        "format": "⏻",
+        "on-click": "poweroff",
         "tooltip": false
     }
 }

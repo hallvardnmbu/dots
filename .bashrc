@@ -4,6 +4,8 @@ export EDITOR="$VISUAL"
 alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 
+alias off='poweroff'
+
 alias s='git status'
 alias aa='git add --all'
 alias a='git add'
