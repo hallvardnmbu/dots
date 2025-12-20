@@ -2,33 +2,36 @@
     font-size: 16px;
     font-family: "JetBrainsMono Nerd Font", "monospace";
     background-color: rgba(200, 200, 200, 0.2);
+    color: black;
     border: 2px solid #088199;
     border-radius: 4px;
 }
 
-#text {
-    color: #000000;
+#img {
+    padding: 4px;
 }
 
 #input {
+    color: black;
     background: unset;
     box-shadow: none;
-    border: unset;
+    border: 2px solid #088199;
     border-radius: 0px;
-    border-bottom: 2px solid #088199;
-    font-size: 20px;
-    padding: 5px 0 5px 10px;
-    margin-bottom: -2px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    padding: 2px 12px;
+}
+#input > image {
+    -gtk-icon-transform: scaleX(0);
+}
+#input:focus {
+    color: white;
+    background: #088199;
 }
 
-#img {
-    padding-right: 5px;
-}
-#entry {
-    padding: 5px;
-    color: #000000;
-}
 #entry:selected {
-    background: transparent;
+    color: white;
+    background: #088199;
     outline: 2px solid #088199;
+    border-radius: 4px;
 }
