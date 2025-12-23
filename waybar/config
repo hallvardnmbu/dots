@@ -67,8 +67,8 @@
         "on-click": "$HOME/.config/waybar/playback/click.sh",
         "on-middle-click": "playerctl previous",
         "on-click-right": "playerctl next",
-        "on-scroll-up": "playerctl volume 0.1+",
-        "on-scroll-down": "playerctl volume 0.1-",
+        "on-scroll-up": "pamixer --increase 10",
+        "on-scroll-down": "pamixer --decrease 10",
         "scroll-step": 5,
         "tooltip": true
     },
