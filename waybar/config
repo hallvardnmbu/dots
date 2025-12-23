@@ -32,8 +32,9 @@
 
     "custom/wallpaper": {
         "format": "◪",
-        "tooltip-format": "Rotate wallpaper.",
-        "on-click": "$HOME/.config/waybar/wallpaper.sh"
+        "tooltip-format": "Rotate wallpaper.\nRight-click to remove.",
+        "on-click": "$HOME/.config/waybar/wallpaper/rotate.sh",
+        "on-click-right": "$HOME/.config/waybar/wallpaper/remove.sh"
     },
 
     "hyprland/workspaces": {
