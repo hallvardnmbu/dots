@@ -8,7 +8,7 @@
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
   "gutter": {
-    "line_numbers": true
+    "line_numbers": true,
   },
   "disable_ai": true,
   "inlay_hints": {
@@ -25,23 +25,23 @@
       "alt": false,
       "shift": false,
       "platform": false,
-      "function": false
-    }
+      "function": false,
+    },
   },
   "buffer_font_family": "JetBrainsMono Nerd Font",
   "telemetry": {
-    "metrics": false
+    "metrics": false,
   },
   "icon_theme": {
     "mode": "system",
     "light": "Zed (Default)",
-    "dark": "Zed (Default)"
+    "dark": "Zed (Default)",
   },
   "ui_font_size": 16,
   "buffer_font_size": 15,
   "theme": {
     "mode": "system",
     "light": "elblur",
-    "dark": "One Dark"
-  }
+    "dark": "One Dark",
+  },
 }

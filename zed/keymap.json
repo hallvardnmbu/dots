@@ -10,13 +10,13 @@
     "context": "Workspace",
     "bindings": {
       // "shift shift": "file_finder::Toggle"
-    }
+    },
   },
   {
     "context": "Editor && vim_mode == insert",
     "bindings": {
       // "j k": "vim::NormalBefore"
-    }
+    },
   },
   {
     "context": "Editor",
@@ -24,44 +24,61 @@
       "ctrl-3": [
         "editor::ToggleComments",
         {
-          "advance_downwards": false
-        }
-      ]
-    }
+          "advance_downwards": false,
+        },
+      ],
+    },
   },
   {
     "context": "Editor",
     "bindings": {
-      "ctrl-/": null
-    }
+      "ctrl-/": null,
+    },
   },
   {
     "context": "((FileFinder || FileFinder > Picker > Editor) || FileFinder > Picker > menu)",
     "bindings": {
-      "ctrl-4": "pane::SplitRight"
-    }
+      "ctrl-4": "pane::SplitRight",
+    },
   },
   {
     "context": "Pane",
     "bindings": {
-      "ctrl-4": "pane::SplitRight"
-    }
+      "ctrl-4": "pane::SplitRight",
+    },
   },
   {
     "context": "Terminal",
     "bindings": {
-      "ctrl-backspace": null
-    }
+      "ctrl-backspace": null,
+    },
   },
   {
     "bindings": {
-      "ctrl-<": "workspace::NewTerminal"
-    }
+      "ctrl-<": "workspace::NewTerminal",
+    },
   },
   {
     "context": "Terminal",
     "bindings": {
-      "ctrl-w": "pane::CloseActiveItem"
-    }
-  }
+      "ctrl-w": "pane::CloseActiveItem",
+    },
+  },
+  {
+    "bindings": {
+      "ctrl-space": "command_palette::Toggle",
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "f1": null,
+    },
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-shift-p": null,
+    },
+  },
 ]
