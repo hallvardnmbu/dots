@@ -39,6 +39,8 @@ tooltip label {
 }
 
 #custom-wallpaper:hover,
+#custom-screenshot:hover,
+#custom-colourpicker:hover,
 #custom-playback:hover,
 #network:hover,
 #custom-lock:hover,
@@ -57,6 +59,8 @@ tooltip label {
 }
 
 #custom-wallpaper,
+#custom-screenshot,
+#custom-colourpicker,
 #clock,
 #custom-playback,
 #cpu,
@@ -72,14 +76,50 @@ tooltip label {
     border: 2px solid @focus;
 }
 
-#custom-wallpaper,
+/* Warnings. */
+.warning {
+    animation-name: blink-warning;
+}
+.critical {
+    animation-name: blink-critical;
+}
+.warning,
+.critical {
+    animation-duration: 0.75s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes blink-warning {
+    to {
+        background-color: transparent;
+        color: @focus;
+    }
+}
+@keyframes blink-critical {
+    from {
+        color: red;
+    }
+    to {
+        background-color: transparent;
+        color: red;
+    }
+}
+
+#custom-colourpicker,
 #custom-playback,
 #temperature {
     margin-right: 8px;
 }
 
 /* Padding to center align icons */
+#custom-wallpaper,
+#custom-screenshot,
+#custom-colourpicker {
+    font-size: 18px;
+}
 #custom-wallpaper {
+    font-size: 24px;
     padding: 0px 10px;
 }
 #clock {
@@ -96,15 +136,14 @@ tooltip label {
 
 /* Radii */
 
-#custom-wallpaper {
-    border-radius: 4px;
-}
+#custom-wallpaper,
 #clock,
 #cpu,
 #network {
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
 }
+#custom-colourpicker,
 #custom-playback,
 #taskbar,
 #temperature,
