@@ -1,19 +1,17 @@
 #!/bin/bash
 
-DIRECTORY="$HOME/.config/wallpapers"
+SCRIPT="$HOME/.config/waybar/wallpaper/rotate.sh"
 
 # Time to wait between changes (in seconds)
 SLEEP=3600
 
+# Initialize hyprpaper
+hyprpaper &
+while ! hyprctl hyprpaper listactive >/dev/null 2>&1; do
+    sleep 0.1
+done
+
 while true; do
-    FILE=$(find "$DIRECTORY" -type f -name "*.jpg" | shuf -n 1)
-
-    if [ -n "$FILE" ]; then
-        hyprctl hyprpaper preload "$FILE"
-        hyprctl hyprpaper wallpaper ",$FILE"
-    else
-        echo "No files found in $DIRECTORY"
-    fi
-
+    exec $SCRIPT
     sleep $SLEEP
 done
