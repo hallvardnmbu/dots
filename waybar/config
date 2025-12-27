@@ -103,11 +103,13 @@
     "cpu": {
         "interval": 10,
         "max-length": 10,
-        "format": " {usage}%",
+        "format-icons": "",
+        "format": "{icon} {usage}%",
         "states": {
             "warning": 50,
             "critical": 90
-        }
+        },
+        "tooltip": true
     },
 
     "custom/gpu": {
@@ -155,6 +157,7 @@
     "custom/off": {
         "format": "⏻",
         "on-click": "poweroff",
-        "tooltip-format": "Power off."
+        "on-click-right": "reboot",
+        "tooltip-format": "Power off.\n* Left: off\n* Right: reboot"
     }
 }
