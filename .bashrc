@@ -19,6 +19,5 @@ export PATH="$BUN_INSTALL/bin:$PATH"
 
 export PATH="$HOME/.local/bin:$PATH"
 export PATH="$HOME/Code/docker/target/release/:$PATH"
-export PATH="$HOME/Applications/awww/target/release/:$PATH"
 
 PS1='[\u@\h \W]\$ '

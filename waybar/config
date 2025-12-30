@@ -35,8 +35,8 @@
     "custom/wallpaper": {
         "format": "☯",
         "tooltip-format": "Rotate wallpaper.\n* Left:  rotate\n* Right: remove",
-        "on-click": "$HOME/.config/waybar/wallpaper/rotate.sh",
-        "on-click-right": "$HOME/.config/waybar/wallpaper/remove.sh"
+        "on-click": "$HOME/.config/screen/rotate.sh",
+        "on-click-right": "$HOME/.config/screen/remove.sh"
     },
 
     "custom/screenshot": {
