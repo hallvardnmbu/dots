@@ -1,7 +1,7 @@
 #window {
     font-size: 16px;
     font-family: "JetBrainsMono Nerd Font", "monospace";
-    background-color: rgba(200, 200, 200, 0.2);
+    background: transparent;
     color: black;
     border: 2px solid #088199;
     border-radius: 4px;
@@ -12,8 +12,7 @@
 }
 
 #input {
-    color: black;
-    background: unset;
+    background: none;
     box-shadow: none;
     border: 2px solid #088199;
     border-radius: 0px;

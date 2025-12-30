@@ -15,6 +15,10 @@ alias pl='git pull'
 
 export XDG_CONFIG_HOME="$HOME/.config"
 export BUN_INSTALL="$HOME/.bun"
-export PATH="$BUN_INSTALL/bin:$HOME/.local/bin:/home/acme/Code/docker/target/release/:$PATH"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/Code/docker/target/release/:$PATH"
+export PATH="$HOME/Applications/awww/target/release/:$PATH"
 
 PS1='[\u@\h \W]\$ '

@@ -1,8 +1,6 @@
 font=JetBrainsMono Nerd Font 12
-background-color=#ffffff03
-text-color=#0f0f0f
-border-color=#088199
-border-size=2
+background-color=#088199
+text-color=#eeeeee
 border-radius=4
 margin=15
 icons=1

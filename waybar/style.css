@@ -1,6 +1,5 @@
-@define-color focus #088199;
+@define-color blue #088199;
 @define-color white #eeeeee;
-@define-color text  #0f0f0f;
 
 * {
     border: none;
@@ -16,7 +15,7 @@ window#waybar {
 }
 
 button {
-    color: @focus;
+    color: @blue;
 }
 button,
 tooltip label {
@@ -27,7 +26,7 @@ tooltip label {
 #workspaces,
 #taskbar {
     background: transparent;
-    border: 2px solid @focus;
+    border: 2px solid @blue;
     border-radius: 4px;
 }
 #workspaces button:hover,
@@ -35,7 +34,7 @@ tooltip label {
 #taskbar button:hover,
 #taskbar button.active {
     color: @white;
-    background: @focus;
+    background: @blue;
 }
 
 #custom-wallpaper:hover,
@@ -45,12 +44,12 @@ tooltip label {
 #network:hover,
 #custom-lock:hover,
 #custom-off:hover {
-    color: @focus;
+    color: @blue;
     background: transparent;
 }
 
 tooltip {
-    background: @focus;
+    background: @blue;
     border-radius: 4px;
 }
 tooltip label {
@@ -70,10 +69,10 @@ tooltip label {
 #network,
 #custom-lock,
 #custom-off {
-    background: @focus;
+    background: @blue;
     padding: 0px 8px;
     color: @white;
-    border: 2px solid @focus;
+    border: 2px solid @blue;
 }
 
 /* Warnings. */
@@ -93,7 +92,7 @@ tooltip label {
 @keyframes blink-warning {
     to {
         background-color: transparent;
-        color: @focus;
+        color: @blue;
     }
 }
 @keyframes blink-critical {
