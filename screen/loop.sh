@@ -4,6 +4,8 @@ SCRIPT="$HOME/.config/screen/rotate.sh"
 SLEEP=3600
 
 while true; do
-    $SCRIPT
+    if hyprctl monitors | grep -q "dpmsStatus: 1"; then
+        $SCRIPT
+    fi
     sleep $SLEEP
 done

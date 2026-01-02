@@ -1,9 +1,8 @@
 #!/bin/bash
 
-playerctl status 2>/dev/null | grep -q "Playing" && exit 1
-pactl list sinks | grep -q "RUNNING" && exit 1
-
-pkill -STOP -f loop.sh
-hyprctl dispatch dpms off
+# Check if media is playing.
+if pactl list sinks | grep -q "RUNNING"; then
+    exit 1
+fi
 
 exit 0
