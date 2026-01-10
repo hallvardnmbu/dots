@@ -12,8 +12,8 @@
     "margin-top": 8,
 
     "modules-left": [
-        "custom/menu",
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+        "custom/menu"
     ],
     "modules-center": [
         "clock",
@@ -30,20 +30,6 @@
         "custom/off"
     ],
 
-    "custom/menu": {
-        "format": "☼",
-        "menu": "on-click",
-        "menu-file": "~/.config/waybar/visuals-menu.xml",
-        "menu-actions": {
-            "wallpaper-rotate": "$HOME/.config/screen/rotate.sh",
-            "wallpaper-remove": "$HOME/.config/screen/remove.sh",
-            "record-image": "slurp | grim -g - - | wl-copy",
-            "record-video": "$HOME/.config/waybar/record.sh",
-            "colourpicker-hex": "hyprpicker --autocopy --no-fancy --format=hex",
-            "colourpicker-rgb": "hyprpicker --autocopy --no-fancy --format=rgb"
-        }
-    },
-
     "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {
@@ -57,6 +43,21 @@
         "persistent-workspaces": {
             "*": [ 1, 2, 3 ]
         }
+    },
+
+    "custom/menu": {
+        "format": "☼",
+        "menu": "on-click",
+        "menu-file": "~/.config/waybar/visuals-menu.xml",
+        "menu-actions": {
+            "wallpaper-rotate": "$HOME/.config/screen/rotate.sh",
+            "wallpaper-remove": "$HOME/.config/screen/remove.sh",
+            "record-image": "slurp | grim -g - - | wl-copy",
+            "record-video": "$HOME/.config/waybar/record.sh",
+            "colourpicker-hex": "hyprpicker --autocopy --no-fancy --format=hex",
+            "colourpicker-rgb": "hyprpicker --autocopy --no-fancy --format=rgb"
+        },
+        "tooltip": false
     },
 
     "clock": {
