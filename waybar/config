@@ -12,9 +12,7 @@
     "margin-top": 8,
 
     "modules-left": [
-        "custom/wallpaper",
-        "custom/screenshot",
-        "custom/colourpicker",
+        "custom/menu",
         "hyprland/workspaces"
     ],
     "modules-center": [
@@ -32,24 +30,18 @@
         "custom/off"
     ],
 
-    "custom/wallpaper": {
-        "format": "☯",
-        "tooltip-format": "Rotate wallpaper.\n* Left:  rotate\n* Right: remove",
-        "on-click": "$HOME/.config/screen/rotate.sh",
-        "on-click-right": "$HOME/.config/screen/remove.sh"
-    },
-
-    "custom/screenshot": {
-        "format": "✂",
-        "tooltip-format": "Screenshot.",
-        "on-click": "slurp | grim -g - - | wl-copy"
-    },
-
-    "custom/colourpicker": {
-        "format": "✒",
-        "tooltip-format": "Copy a colour.\n* Left:  hex\n* Right: rgb",
-        "on-click": "hyprpicker --autocopy --no-fancy --format=hex",
-        "on-click-right": "hyprpicker --autocopy --no-fancy --format=rgb"
+    "custom/menu": {
+        "format": "☼",
+        "menu": "on-click",
+        "menu-file": "~/.config/waybar/visuals-menu.xml",
+        "menu-actions": {
+            "wallpaper-rotate": "$HOME/.config/screen/rotate.sh",
+            "wallpaper-remove": "$HOME/.config/screen/remove.sh",
+            "record-image": "slurp | grim -g - - | wl-copy",
+            "record-video": "$HOME/.config/waybar/record.sh",
+            "colourpicker-hex": "hyprpicker --autocopy --no-fancy --format=hex",
+            "colourpicker-rgb": "hyprpicker --autocopy --no-fancy --format=rgb"
+        }
     },
 
     "hyprland/workspaces": {
