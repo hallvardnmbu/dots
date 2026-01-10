@@ -18,6 +18,6 @@ export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
 
 export PATH="$HOME/.local/bin:$PATH"
-export PATH="$HOME/Code/docker/target/release/:$PATH"
+export PATH="$HOME/code/docker/target/release/:$PATH"
 
 PS1='[\u@\h \W]\$ '
