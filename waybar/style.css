@@ -25,7 +25,7 @@ tooltip label {
 }
 menuitem {
     border: unset;
-    padding: unset;
+    padding: 4px 0px;
     border-radius: 4px;
     color: @white;
     background: @blue;
@@ -47,7 +47,6 @@ menu,
     background: @blue;
 }
 
-menuitem:hover,
 #custom-menu:hover,
 #custom-playback:hover,
 #network:hover,
@@ -55,6 +54,12 @@ menuitem:hover,
 #custom-off:hover {
     color: @blue;
     background: transparent;
+}
+
+/* Blurred background */
+menuitem:hover {
+    color: @blue;
+    background: rgba(255, 255, 255, 0.2);
 }
 
 tooltip {
