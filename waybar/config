@@ -27,6 +27,7 @@
         "custom/gpu",
         "memory",
         "temperature",
+        "custom/server",
         "network",
         "custom/lock",
         "custom/off"
@@ -142,6 +143,13 @@
         "warning-threshold": 50,
         "critical-threshold": 80,
         "tooltip-format": "CPU temperature."
+    },
+
+    "custom/server": {
+        "format": "⌘",
+        "tooltip-format": "Local server.\n* Left: power on\n* Right: power off",
+        "on-click": "wakeup",
+        "on-click-right": "server sudo poweroff"
     },
 
     "network": {
