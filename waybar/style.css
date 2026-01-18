@@ -23,15 +23,7 @@ tooltip label {
     text-shadow: none;
     transition: none;
 }
-menuitem {
-    border: unset;
-    padding: 4px 0px;
-    border-radius: 4px;
-    color: @white;
-    background: @blue;
-}
 
-menu,
 #workspaces,
 #taskbar {
     background: transparent;
@@ -47,7 +39,9 @@ menu,
     background: @blue;
 }
 
-#custom-menu:hover,
+#custom-wallpaper:hover,
+#custom-record:hover,
+#custom-colourpicker:hover,
 #custom-playback:hover,
 #network:hover,
 #custom-lock:hover,
@@ -57,7 +51,6 @@ menu,
 }
 
 /* Blurred background */
-menuitem:hover,
 tooltip {
     color: @blue;
     background: rgba(255, 255, 255, 0.2);
@@ -73,7 +66,9 @@ tooltip label {
     font-weight: 600;
 }
 
-#custom-menu,
+#custom-wallpaper,
+#custom-record,
+#custom-colourpicker,
 #clock,
 #custom-playback,
 #cpu,
@@ -120,13 +115,19 @@ tooltip label {
 }
 
 #workspaces,
+#custom-colourpicker,
 #custom-playback,
 #temperature {
     margin-right: 8px;
 }
 
 /* Padding to center align icons */
-#custom-menu {
+#custom-wallpaper,
+#custom-record,
+#custom-colourpicker {
+    font-size: 18px;
+}
+#custom-wallpaper {
     font-size: 24px;
     padding: 0px 10px;
 }
@@ -144,15 +145,14 @@ tooltip label {
 
 /* Radii */
 
-#custom-menu {
-    border-radius: 4px;
-}
+#custom-wallpaper,
 #clock,
 #cpu,
 #network {
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
 }
+#custom-colourpicker,
 #custom-playback,
 #taskbar,
 #temperature,

@@ -12,8 +12,10 @@
     "margin-top": 8,
 
     "modules-left": [
-        "hyprland/workspaces",
-        "custom/menu"
+        "custom/wallpaper",
+        "custom/record",
+        "custom/colourpicker",
+        "hyprland/workspaces"
     ],
     "modules-center": [
         "clock",
@@ -30,6 +32,29 @@
         "custom/off"
     ],
 
+    "custom/wallpaper": {
+        "format": "☯",
+        "tooltip-format": "Rotate wallpaper.\n* Left:  rotate\n* Right: remove\n* Scroll: transparency",
+        "on-click": "$HOME/.config/screen/rotate.sh",
+        "on-click-right": "$HOME/.config/screen/remove.sh",
+        "on-scroll-up": "$HOME/.config/waybar/transparency.sh increase",
+        "on-scroll-down": "$HOME/.config/waybar/transparency.sh decrease"
+    },
+
+    "custom/record": {
+        "format": "✂",
+        "tooltip-format": "Record screen.\n* Left:  image\n* Right: video",
+        "on-click": "slurp | grim -g - - | wl-copy",
+        "on-click-right": "$HOME/.config/waybar/record.sh"
+    },
+
+    "custom/colourpicker": {
+        "format": "✒",
+        "tooltip-format": "Colourpicker.\n* Left:  hex\n* Right: rgb",
+        "on-click": "hyprpicker --autocopy --no-fancy --format=hex",
+        "on-click-right": "hyprpicker --autocopy --no-fancy --format=rgb"
+    },
+
     "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {
@@ -43,21 +68,6 @@
         "persistent-workspaces": {
             "*": [ 1, 2, 3 ]
         }
-    },
-
-    "custom/menu": {
-        "format": "☼",
-        "menu": "on-click",
-        "menu-file": "~/.config/waybar/visuals-menu.xml",
-        "menu-actions": {
-            "wallpaper-rotate": "$HOME/.config/screen/rotate.sh",
-            "wallpaper-remove": "$HOME/.config/screen/remove.sh",
-            "record-image": "slurp | grim -g - - | wl-copy",
-            "record-video": "$HOME/.config/waybar/record.sh",
-            "colourpicker-hex": "hyprpicker --autocopy --no-fancy --format=hex",
-            "colourpicker-rgb": "hyprpicker --autocopy --no-fancy --format=rgb"
-        },
-        "tooltip": false
     },
 
     "clock": {
