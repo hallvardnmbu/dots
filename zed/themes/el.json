@@ -416,6 +416,8 @@
 
         "panel.background": "#ffffff00",
         "panel.focused_border": "#ffffff00",
+        "panel.overlay_background": "#F2F1EC",
+        "panel.overlay_hover": "#cee6eb",
 
         "scrollbar.track.background": "#ffffff00",
         "scrollbar.thumb.background": "#08819920",
