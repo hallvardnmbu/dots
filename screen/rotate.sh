@@ -1,11 +1,17 @@
 #!/bin/bash
 
 DIRECTORY="$HOME/.config/screen/wallpapers"
-STATE="$HOME/.cache/wallpaper"
+CURRENT="$HOME/.cache/wallpaper/path"
+PID="$HOME/.cache/wallpaper/pid"
 
 FILE=$(find "$DIRECTORY" -maxdepth 1 -type f ! -name '.*' | shuf -n 1)
-echo "$FILE" > "$STATE"
+echo "$FILE" > "$CURRENT"
 
-# Kill old instances and start new one in background
-killall -q swaybg
+# Start the new instance in background
+OLD="$(cat $PID)"
 swaybg -m fill -i "$FILE" &
+echo "$!" > "$PID"
+
+# Kill old instance
+sleep 5
+kill $OLD
