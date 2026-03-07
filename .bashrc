@@ -8,10 +8,17 @@ alias screenshot='slurp | grim -g - - | wl-copy'
 
 alias s='git status'
 alias aa='git add --all'
-alias a='git add'
+alias au='git add --update'
 alias c='git commit -m'
 alias p='git push'
 alias pl='git pull'
+
+function a {
+    git add "$@"
+}
+function b {
+    git checkout "$@"
+}
 
 # Assumes these variables are set.
 # E.g., in ~/.bashrc, which sources this (~/.config/.bashrc).
