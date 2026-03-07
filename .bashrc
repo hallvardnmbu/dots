@@ -10,6 +10,7 @@ alias s='git status'
 alias aa='git add --all'
 alias au='git add --update'
 alias c='git commit -m'
+alias am='git commit --amend --no-edit'
 alias p='git push'
 alias pl='git pull'
 
