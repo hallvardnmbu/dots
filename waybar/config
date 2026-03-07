@@ -75,7 +75,7 @@
         "timezone": "Europe/Oslo",
         "format": "{:%d.%m. %H:%M}",
         "tooltip": true,
-	    "tooltip-format": "{:%B %Y\nWeek %U}"
+        "tooltip-format": "{:%B %Y\nWeek %U}"
     },
 
     "custom/playback": {
@@ -105,7 +105,7 @@
     },
 
     "cpu": {
-        "interval": 10,
+        "interval": 2,
         "max-length": 10,
         "format-icons": "",
         "format": "{icon} {usage}%",
@@ -117,7 +117,7 @@
     },
 
     "custom/gpu": {
-        "interval": 10,
+        "interval": 2,
         "max-length": 10,
         "format": "❏ {text}%",
         "exec": "$HOME/.config/waybar/gpu.sh",
@@ -126,7 +126,7 @@
     },
 
     "memory": {
-        "interval": 30,
+        "interval": 2,
         "format": "⛁ {percentage}%",
         "max-length": 10,
         "tooltip": true,
