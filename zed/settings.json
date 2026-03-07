@@ -7,6 +7,21 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "languages": {
+    "Python": {
+      "colorize_brackets": false,
+      "language_servers": ["ty", "!basedpyright"],
+      "formatter": {
+        "language_server": { "name": "ruff" },
+      },
+      "inlay_hints": {
+        "show_background": false,
+        "enabled": true,
+      },
+      "preferred_line_length": 120,
+      "soft_wrap": "preferred_line_length",
+    },
+  },
   "gutter": {
     "line_numbers": true,
   },
