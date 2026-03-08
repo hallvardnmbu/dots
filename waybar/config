@@ -113,7 +113,8 @@
             "warning": 50,
             "critical": 90
         },
-        "tooltip": true
+        "tooltip": true,
+        "on-click": "kitty top --sort-override=%CPU"
     },
 
     "custom/gpu": {
@@ -134,7 +135,8 @@
         "states": {
             "warning": 50,
             "critical": 90
-        }
+        },
+        "on-click": "kitty top --sort-override=%MEM"
     },
 
     "temperature": {
