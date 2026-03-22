@@ -3,7 +3,7 @@
     font-family: "JetBrainsMono Nerd Font", "monospace";
     background: transparent;
     color: black;
-    border: 2px solid #088199;
+    outline: 2px solid #088199;
     border-radius: 4px;
 }
 
@@ -14,10 +14,9 @@
 #input {
     background: none;
     box-shadow: none;
-    border: 2px solid #088199;
+    border: unset;
+    border-bottom: 2px solid #088199;
     border-radius: 0px;
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px;
     padding: 2px 12px;
 }
 #input > image {
@@ -32,5 +31,4 @@
     color: white;
     background: #088199;
     outline: 2px solid #088199;
-    border-radius: 4px;
 }
