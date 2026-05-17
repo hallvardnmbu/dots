@@ -81,4 +81,26 @@
       "ctrl-shift-p": null,
     },
   },
+  {
+    "context": "Pane",
+    "bindings": {
+      "ctrl-m w": [
+        "pane::CloseOtherItems",
+        {
+          "close_pinned": false
+        }
+      ]
+    }
+  },
+  {
+    "context": "Pane",
+    "unbind": {
+      "ctrl-alt-t": [
+        "pane::CloseOtherItems",
+        {
+          "close_pinned": false
+        }
+      ]
+    }
+  }
 ]
