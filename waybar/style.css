@@ -43,7 +43,6 @@ tooltip label {
 #custom-record:hover,
 #custom-colourpicker:hover,
 #custom-playback:hover,
-#custom-server:hover,
 #network:hover,
 #custom-lock:hover,
 #custom-off:hover {
@@ -76,7 +75,6 @@ tooltip label {
 #custom-gpu,
 #memory,
 #temperature,
-#custom-server,
 #network,
 #custom-lock,
 #custom-off {
@@ -136,10 +134,6 @@ tooltip label {
 #clock {
     padding: 0px 2px 0px 8px;
 }
-#custom-server {
-    font-size: 22px;
-    padding: 0px 10px;
-}
 #custom-playback {
     font-size: 22px;
     padding: 0px 12px 0px 10px;
@@ -154,7 +148,7 @@ tooltip label {
 #custom-wallpaper,
 #clock,
 #cpu,
-#custom-server {
+#network {
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
 }
