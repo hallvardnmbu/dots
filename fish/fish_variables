@@ -1,0 +1,4 @@
+# This file contains fish universal variable definitions.
+# VERSION: 3.0
+SETUVAR __fish_initialized:4300
+SETUVAR fish_user_paths:/home/acme/code/docker/target/release\x1e/home/acme/\x2elocal/bin\x1e/home/acme/\x2ebun/bin
