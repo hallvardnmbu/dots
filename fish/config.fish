@@ -6,7 +6,12 @@ end
 
 set fish_greeting ""
 function fish_prompt
-    echo (prompt_pwd) '> '
+    set branch (git branch --show-current 2>/dev/null)
+    if test -n "$branch"
+        echo (prompt_pwd) "($branch)" '> '
+    else
+        echo (prompt_pwd) '> '
+    end
 end
 
 set VISUAL "/usr/bin/vim"
