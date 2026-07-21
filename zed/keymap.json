@@ -102,5 +102,41 @@
         }
       ]
     }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-?": "agent::ToggleFocus"
+    }
+  },
+  {
+    "context": "Editor",
+    "unbind": {
+      "ctrl-l": "editor::SelectLine"
+    }
+  },
+  {
+    "context": "FileFinder || FileFinder > Picker > Editor || FileFinder > Picker > menu",
+    "unbind": {
+      "ctrl-l": "pane::SplitRight"
+    }
+  },
+  {
+    "context": "BufferSearchBar",
+    "unbind": {
+      "ctrl-l": "search::ToggleSelection"
+    }
+  },
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-l": "workspace::ToggleRightDock"
+    }
+  },
+  {
+    "context": "Workspace",
+    "unbind": {
+      "ctrl-alt-b": "workspace::ToggleRightDock"
+    }
   }
 ]

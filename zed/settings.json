@@ -7,6 +7,36 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
+  "agent_servers": {
+    "claude-acp": {
+      "type": "registry"
+    },
+    "cursor": {
+      "default_config_options": {
+        "mode": "agent",
+        "model": "claude-sonnet-5"
+      },
+      "type": "registry"
+    }
+  },
+  "show_edit_predictions": false,
+  "lsp": {
+    "vtsls": {
+      "settings": {
+        "typescript": {
+          "updateImportsOnFileMove": {
+            "enabled": "never",
+          },
+        },
+        "javascript": {
+          "updateImportsOnFileMove": {
+            "enabled": "never",
+          },
+        },
+      },
+      "enable_lsp_tasks": true,
+    },
+  },
   "cli_default_open_behavior": "existing_window",
   "project_panel": {
     "dock": "left",
@@ -18,6 +48,7 @@
     "dock": "left",
   },
   "agent": {
+    "sidebar_side": "right",
     "dock": "right",
     "favorite_models": [],
     "model_parameters": [],
@@ -52,10 +83,24 @@
       "soft_wrap": "none",
     },
   },
+  "ssh_connections": [
+    {
+      "host": "192.168.86.89",
+      "username": "vanitas",
+      "port": 2001,
+      "args": ["-i", "/home/acme/.ssh/vanitas"],
+      "projects": [
+        {
+          "paths": ["/home/vanitas/./"],
+        },
+      ],
+      "nickname": "vanitas",
+    },
+  ],
   "gutter": {
     "line_numbers": true,
   },
-  "disable_ai": true,
+  "disable_ai": false,
   "inlay_hints": {
     "enabled": true,
     "show_value_hints": true,
