@@ -14,8 +14,8 @@ function fish_prompt
     end
 end
 
-set VISUAL "/usr/bin/vim"
-set EDITOR $VISUAL
+set -gx VISUAL "/usr/bin/vim"
+set -gx EDITOR $VISUAL
 
 if test -f $HOME/.config/fish/secrets.fish
     source $HOME/.config/fish/secrets.fish
@@ -41,6 +41,7 @@ function b
 end
 
 alias node='bun'
+alias cursor='agent'
 
 alias server="ssh -i $LOCAL_SSH"
 alias snuble="ssh -i $REMOTE_SSH"
