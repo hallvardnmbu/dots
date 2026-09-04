@@ -11,8 +11,8 @@ hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd("kitty"))
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd("wofi --show drun"))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd("dolphin"))
 hl.bind(mainMod .. " + F", hl.dsp.exec_cmd("firefox"))
-hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd("$HOME/.local/bin/zed"))
-hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("flatpak run com.spotify.Client"))
+hl.bind(mainMod .. " + Z", hl.dsp.exec_cmd("zeditor"))
+hl.bind(mainMod .. " + M", hl.dsp.exec_cmd("spotify-launcher"))
 
 -- Screenshot
 hl.bind(mainMod .. " + P", hl.dsp.exec_cmd("slurp | grim -g - - | wl-copy"))

@@ -58,8 +58,7 @@
     "hyprland/workspaces": {
         "format": "{icon}",
         "format-icons": {
-            "default": "○",
-            "default": "●",
+            "default": "●"
         },
         "on-click": "activate",
         "disable-scroll": true,
@@ -100,7 +99,7 @@
         "tooltip-format": "{title}",
         "on-click": "activate",
         "on-click-middle": "close",
-        "ignore-list": ["kitty"],
+        "ignore-list": ["kitty"]
     },
 
     "cpu": {
@@ -139,10 +138,12 @@
     },
 
     "temperature": {
-        "thermal-zone": 1,
+        "hwmon-path-abs": "/sys/devices/pci0000:00/0000:00:18.3/hwmon",
+        "input-filename": "temp1_input",
         "format": " {temperatureC}°C",
         "warning-threshold": 50,
         "critical-threshold": 80,
+        "tooltip": true,
         "tooltip-format": "CPU temperature."
     },
 

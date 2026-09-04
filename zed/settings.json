@@ -85,17 +85,32 @@
   },
   "ssh_connections": [
     {
-      "host": "192.168.86.89",
-      "username": "vanitas",
-      "port": 2001,
-      "args": ["-i", "/home/acme/.ssh/vanitas"],
+      "host": "192.168.86.79",
+      "username": "repere",
+      "args": [],
       "projects": [
         {
-          "paths": ["/home/vanitas/./"],
+          "paths": [
+            "/home/repere"
+          ]
         },
-      ],
-      "nickname": "vanitas",
-    },
+        {
+          "paths": [
+            "/home/repere/.config/containers/systemd/./"
+          ]
+        },
+        {
+          "paths": [
+            "/home/repere/snublecron"
+          ]
+        },
+        {
+          "paths": [
+            "/media/config/jellyfin/style/./"
+          ]
+        }
+      ]
+    }
   ],
   "gutter": {
     "line_numbers": true,

@@ -5,7 +5,9 @@ org.prismlauncher.PrismLauncher
 org.pulseaudio.pavucontrol
 steam
 tor-browser
+org.torproject.torbrowser-launcher
 PrusaSlicer
 com.spotify.Client
+spotify-launcher
 blender
 nordvpn-gui

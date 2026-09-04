@@ -51,4 +51,9 @@ set -x BUN_INSTALL "$HOME/.bun"
 
 fish_add_path $BUN_INSTALL/bin
 fish_add_path $HOME/.local/bin
+fish_add_path $HOME/.cargo/bin
 fish_add_path $HOME/code/docker/target/release/
+
+# ESP32 Rust development
+set -gx LIBCLANG_PATH "$HOME/.rustup/toolchains/esp/xtensa-esp32-elf-clang/esp-20.1.1_20250829/esp-clang/lib"
+fish_add_path $HOME/.rustup/toolchains/esp/xtensa-esp-elf/esp-15.2.0_20250920/xtensa-esp-elf/bin

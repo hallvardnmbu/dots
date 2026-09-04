@@ -128,6 +128,7 @@ hl.config({
     misc = {
         force_default_wallpaper = 0,
         disable_hyprland_logo = true,
+	background_color = "rgb(ffffff)",
     },
     -- https://wiki.hypr.land/Configuring/Layouts/Dwindle-Layout/
     dwindle = {

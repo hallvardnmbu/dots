@@ -29,5 +29,7 @@ MAX=0.6
 [ "$(echo "$INACTIVE < $MIN" | bc)" -eq 1 ] && INACTIVE=$MIN
 [ "$(echo "$INACTIVE > $MAX" | bc)" -eq 1 ] && INACTIVE=$MAX
 
-hyprctl keyword decoration:active_opacity "$(printf "%.2f" "$ACTIVE")"
-hyprctl keyword decoration:inactive_opacity "$(printf "%.2f" "$INACTIVE")"
+ACT_FMT=$(printf '%.2f' "$ACTIVE")
+INACT_FMT=$(printf '%.2f' "$INACTIVE")
+
+hyprctl eval "hl.config({ decoration = { active_opacity = $ACT_FMT, inactive_opacity = $INACT_FMT } })"
