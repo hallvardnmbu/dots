@@ -1,4 +1,0 @@
-# This file contains fish universal variable definitions.
-# VERSION: 3.0
-SETUVAR __fish_initialized:4300
-SETUVAR fish_user_paths:/home/adiuvo/\x2ecargo/bin\x1e/home/adiuvo/\x2elocal/bin\x1e/home/adiuvo/code/docker/target/release\x1e/home/acme/\x2erustup/toolchains/esp/xtensa\x2desp\x2delf/esp\x2d15\x2e2\x2e0_20250920/xtensa\x2desp\x2delf/bin\x1e/home/acme/\x2ecargo/bin\x1e/home/acme/code/docker/target/release\x1e/home/acme/\x2elocal/bin\x1e/home/acme/\x2ebun/bin
