@@ -159,7 +159,7 @@
   "buffer_font_size": 15,
   "theme": {
     "mode": "system",
-    "light": "elblur",
+    "light": "el",
     "dark": "One Dark",
   },
 }
