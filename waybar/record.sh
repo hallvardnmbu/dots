@@ -3,7 +3,7 @@
 FILENAME="$(date +%Y-%m-%d_%H-%M-%S).mp4"
 FILEPATH="$HOME/Downloads/$FILENAME"
 
-wf-recorder -g "$(slurp)" -f "$FILEPATH" &
+wf-recorder -g "$(slurp -b ffffff00)" -f "$FILEPATH" &
 REC_PID=$!
 
 notify-send "Recording Started" "Click to stop recording" \

@@ -44,7 +44,7 @@
     "custom/record": {
         "format": "✂",
         "tooltip-format": "Record screen.\n* Left:  image\n* Right: video",
-        "on-click": "slurp | grim -g - - | wl-copy",
+        "on-click": "slurp -b ffffff00 | grim -g - - | wl-copy",
         "on-click-right": "$HOME/.config/waybar/record.sh"
     },
 
