@@ -48,6 +48,9 @@ for location in "${LOCATIONS[@]}"; do
 done
 
 echo "Applying whitelist..."
+SHOW_LIST=()
+HIDE_LIST=()
+
 for location in "${LOCATIONS[@]}"; do
     if [[ ! -d "$location" ]]; then
         continue
@@ -59,10 +62,10 @@ for location in "${LOCATIONS[@]}"; do
             base_name=$(basename "$file" .desktop)
 
             if [[ -n "${WHITELIST[$base_name]}" ]]; then
-                echo "* showing: $base_name"
                 # already stripped above, nothing more to do
+                SHOW_LIST+=("$base_name")
             else
-                echo "* hiding: $base_name"
+                HIDE_LIST+=("$base_name")
                 if grep -q "\[Desktop Entry\]" "$file"; then
                     sed -i '/\[Desktop Entry\]/a NoDisplay=true' "$file"
                 else
@@ -75,4 +78,18 @@ for location in "${LOCATIONS[@]}"; do
     update-desktop-database "$location" 2>/dev/null
 done
 
-echo "Done."
+echo ""
+echo "Hidden (${#HIDE_LIST[@]})"
+echo ""
+for app in "${HIDE_LIST[@]}"; do
+    echo "  $app"
+done
+
+echo ""
+echo "Shown (${#SHOW_LIST[@]})"
+echo ""
+for app in "${SHOW_LIST[@]}"; do
+    echo "  $app"
+done
+
+echo ""
