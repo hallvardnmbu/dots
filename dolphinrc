@@ -1,0 +1,30 @@
+MenuBar=Disabled
+
+[CompactMode]
+UseSystemFont=true
+
+[DetailsMode]
+LeftPadding=13
+UseSystemFont=true
+
+[General]
+ShowFullPath=true
+Version=202
+ViewPropsTimestamp=2025,9,6,16,42,38.314
+
+[IconsMode]
+PreviewSize=32
+UseSystemFont=true
+
+[InformationPanel]
+previewsShown=false
+
+[KFileDialog Settings]
+Places Icons Auto-resize=false
+Places Icons Static Size=22
+
+[MainWindow]
+MenuBar=Disabled
+
+[PreviewSettings]
+Plugins=
