@@ -1,7 +1,7 @@
-local terminal = "kitty"
-local fileManager = "dolphin"
-local menu = "wofi --show drun"
+require("modules.start")
 
-require("startup")
-require("display")
-require("keybind")
+require("modules.animations")
+require("modules.binds")
+require("modules.devices")
+require("modules.variables")
+require("modules.windows")

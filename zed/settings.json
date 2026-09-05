@@ -36,6 +36,15 @@
       },
       "enable_lsp_tasks": true,
     },
+    "lua-language-server": {
+      "settings": {
+        "Lua": {
+          "diagnostics": {
+            "globals": ["hl"]
+          }
+        }
+      }
+    },
   },
   "cli_default_open_behavior": "existing_window",
   "project_panel": {
@@ -81,6 +90,10 @@
       },
       "preferred_line_length": 120,
       "soft_wrap": "none",
+    },
+    "Lua": {
+      "format_on_save": "on",
+      "formatter": "language_server"
     },
   },
   "ssh_connections": [
