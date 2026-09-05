@@ -1,5 +1,5 @@
 if status --is-login
-    if test -z "$DISPLAY" && test (tty) = "/dev/tty1"
+    if test -z "$WAYLAND_DISPLAY" && test (tty) = "/dev/tty1"
         exec start-hyprland
     end
 end
