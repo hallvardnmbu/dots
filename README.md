@@ -3,6 +3,12 @@
 <details>
     <summary>Dependencies</summary>
 
+## Oneliner
+
+Assumes AMD CPU, Nvidia GPU (actively supported; not older ones!) and an btrfs filesystem.
+
+`amd-ucode base btrfs-progs linux linux-firmware linux-headers networkmanager nvidia-open-dkms nvidia-settings nvidia-utils pipewire sudo vim wireplumber hypridle hyprland hyprlock libnotify mako noto-fonts-emoji playerctl swaybg swayidle ttf-jetbrains-mono-nerd waybar wl-clipboard wofi dolphin firefox fish kitty spotify-launcher torbrowser-launcher bind less openssh git github-cli zed gnome-keyring seahorse blender tree rust nmap rsync which hyprpicker slurp grim wf-recorder bc jq`
+
 ## Bare minimum
 
 System dependencies and base hyprland.
