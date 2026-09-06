@@ -8,5 +8,5 @@ if [ "$STATUS" = "Playing" ]; then
 elif [ "$STATUS" = "Paused" ]; then
     playerctl play-pause
 else
-    /usr/bin/flatpak run --branch=stable --arch=x86_64 --command=spotify --file-forwarding com.spotify.Client @@u %U @@
+    spotify-launcher &
 fi
