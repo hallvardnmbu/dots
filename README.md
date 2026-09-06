@@ -19,7 +19,7 @@ System dependencies and base hyprland.
 
 Assumes AMD CPU, Nvidia GPU (actively supported; not older ones!) and an btrfs filesystem.
 
-```
+```bash
 amd-ucode
 base
 btrfs-progs
@@ -38,7 +38,7 @@ wireplumber
 
 ### Hyprland
 
-```
+```bash
 hypridle
 hyprland
 hyprlock
@@ -56,7 +56,7 @@ wofi
 
 ## For the dots
 
-```
+```bash
 dolphin
 firefox
 fish
@@ -67,7 +67,7 @@ torbrowser-launcher
 
 ### Additions for developing
 
-```
+```bash
 bind
 less
 openssh
@@ -93,7 +93,7 @@ Packages pulled in only because a script under `~/.config/` needs it or one of i
 
 ### waybar
 
-```
+```bash
 hyprpicker
 slurp
 grim
@@ -112,7 +112,7 @@ jq
 
 ### screen
 
-```
+```bash
 wireplumber # uses `wpctl` to find active streams
 swaybg
 ```
