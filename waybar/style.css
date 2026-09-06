@@ -24,6 +24,7 @@ tooltip label {
     transition: none;
 }
 
+menu,
 #workspaces,
 #taskbar {
     background: transparent;
@@ -31,6 +32,15 @@ tooltip label {
     border-radius: 4px;
     padding: unset;
 }
+menu separator {
+    min-height: 2px;
+    background: @blue;
+}
+menuitem {
+    border-radius: 4px;
+}
+
+menuitem:hover,
 #workspaces button:hover,
 #workspaces button.active,
 #taskbar button:hover,
@@ -40,8 +50,7 @@ tooltip label {
 }
 
 #custom-wallpaper:hover,
-#custom-record:hover,
-#custom-colourpicker:hover,
+#custom-utilities:hover,
 #custom-playback:hover,
 #network:hover,
 #custom-lock:hover,
@@ -51,6 +60,7 @@ tooltip label {
 }
 
 /* Blurred background */
+menuitem,
 tooltip {
     color: @blue;
     background: rgba(255, 255, 255, 0.2);
@@ -67,8 +77,7 @@ tooltip label {
 }
 
 #custom-wallpaper,
-#custom-record,
-#custom-colourpicker,
+#custom-utilities,
 #clock,
 #custom-playback,
 #cpu,
@@ -115,16 +124,14 @@ tooltip label {
 }
 
 #workspaces,
-#custom-colourpicker,
-#custom-playback,
+#custom-utilities,
 #temperature {
     margin-right: 8px;
 }
 
 /* Padding to center align icons */
 #custom-wallpaper,
-#custom-record,
-#custom-colourpicker {
+#custom-utilities {
     font-size: 18px;
 }
 #custom-wallpaper {
@@ -152,7 +159,7 @@ tooltip label {
     border-top-left-radius: 4px;
     border-bottom-left-radius: 4px;
 }
-#custom-colourpicker,
+#custom-utilities,
 #custom-playback,
 #taskbar,
 #temperature,

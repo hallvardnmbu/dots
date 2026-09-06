@@ -13,8 +13,7 @@
 
     "modules-left": [
         "custom/wallpaper",
-        "custom/record",
-        "custom/colourpicker",
+        "custom/utilities",
         "hyprland/workspaces"
     ],
     "modules-center": [
@@ -41,18 +40,17 @@
         "on-scroll-down": "$HOME/.config/waybar/transparency.sh decrease"
     },
 
-    "custom/record": {
-        "format": "✂",
-        "tooltip-format": "Record screen.\n* Left:  image\n* Right: video",
-        "on-click": "slurp -b ffffff00 | grim -g - - | wl-copy",
-        "on-click-right": "$HOME/.config/waybar/record.sh"
-    },
-
-    "custom/colourpicker": {
-        "format": "✒",
-        "tooltip-format": "Colourpicker.\n* Left:  hex\n* Right: rgb",
-        "on-click": "hyprpicker --autocopy --no-fancy --format=hex",
-        "on-click-right": "hyprpicker --autocopy --no-fancy --format=rgb"
+    "custom/utilities": {
+        "format" : "✂",
+        "tooltip-format": "Utilities.",
+        "menu": "on-click",
+        "menu-file": "~/.config/waybar/utilities.xml",
+        "menu-actions": {
+            "screenshot": "slurp -b ffffff00 | grim -g - - | wl-copy",
+            "record": "$HOME/.config/waybar/record.sh",
+            "rgb-color": "hyprpicker --autocopy --no-fancy --format=rgb",
+            "hex-color": "hyprpicker --autocopy --no-fancy --format=hex",
+        },
     },
 
     "hyprland/workspaces": {
